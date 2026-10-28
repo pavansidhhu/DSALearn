@@ -1,4 +1,4 @@
-package Learn;
+package Search;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -22,13 +22,13 @@ public class BinarySearch1 {
         boolean b=false;
         int low=0;
         int high=a.length-1;
-        while(low<high){
+        while(low<=high){
             int mid=(low+high)/2;
             if(t==a[mid]){
                 b=true;
                 break;
             }
-            else if(t>mid){
+            else if(t>a[mid]){
                 low=mid+1;
             }
             else{
